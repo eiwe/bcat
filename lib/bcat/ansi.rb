@@ -138,7 +138,7 @@ class Bcat
 
     def reset_styles
       stack, @stack = @stack, []
-      stack.reverse.map { |tag| "</#{tag}>" }.join
+      stack.reverse.map { |tag| "</#{tag}><br/>" }.join
     end
 
     def tokenize(text)
